@@ -40,9 +40,11 @@ pip install -r requirements.txt
 
 ## Data availability
 
-Participant data contain personal and health information and are therefore not included in this repository. De-identified EEG data, derived features and the participant table are available from the author on reasonable request (zulaltannur@arizona.edu), in the folder layout these scripts expect (`data/`, `results/`, `participants/`).
+The de-identified dataset is openly available on Zenodo: https://doi.org/10.5281/zenodo.24415751 (raw recordings, cleaned continuous data, shape-labelled epochs, derived features, the results of every stage, the participant table and the experiment files). Unzip all archives into the repository root so that `data/`, `results/`, `participants/` and `experiment/` sit next to `src/`.
 
-Participants appear only as anonymous labels P01–P23, identical to the labels used in the paper. Several analyses draw random subsets of participants from sorted lists; the data package includes `participants/analysis_order.json`, which restores the participant order of the original analyses (see `src/participant_order.py`). With it, the scripts reproduce the reported numbers and figures exactly.
+Participants appear only as anonymous labels P01–P23, identical to the labels used in the paper. Several analyses draw random subsets of participants from sorted lists; the dataset includes `participants/analysis_order.json`, which restores the participant order of the original analyses (see `src/participant_order.py`). With it, the scripts reproduce the reported numbers and figures exactly.
+
+This code is archived on Zenodo: https://doi.org/10.5281/zenodo.24415753.
 
 ## Ethics
 
